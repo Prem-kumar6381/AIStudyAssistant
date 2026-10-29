@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIStudyAssistant.API", "AIStudyAssistant.API\AIStudyAssistant.API.csproj", "{763E7C13-5734-437C-9D58-C4639842E681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIStudyAssistant.Tests", "AIStudyAssistant.Tests\AIStudyAssistant.Tests.csproj", "{8939E628-8DED-4772-ADC8-46A95ECA1277}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{763E7C13-5734-437C-9D58-C4639842E681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763E7C13-5734-437C-9D58-C4639842E681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763E7C13-5734-437C-9D58-C4639842E681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763E7C13-5734-437C-9D58-C4639842E681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8939E628-8DED-4772-ADC8-46A95ECA1277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8939E628-8DED-4772-ADC8-46A95ECA1277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8939E628-8DED-4772-ADC8-46A95ECA1277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8939E628-8DED-4772-ADC8-46A95ECA1277}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

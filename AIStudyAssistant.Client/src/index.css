@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand Tokens - Light Theme (Default) */
+  --color-primary: #635BFF;
+  --color-primary-hover: #4E44E5;
+  --color-primary-active: #4036CC;
+  --color-primary-light: #F0EFFF;
+  --color-primary-ring: rgba(99, 91, 255, 0.22);
+  --color-primary-gradient: linear-gradient(135deg, #635BFF 0%, #8774FF 100%);
+
+  /* Backgrounds */
+  --color-bg-app: #F7F8FC;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-sidebar: #F7F8FC;
+  --color-bg-subtle: #F1F3F9;
+  --color-bg-hover: #EBEFF8;
+  --color-bg-active: #E2E6F2;
+  --color-bg-composer: #FFFFFF;
+
+  /* Borders */
+  --color-border: #E7E9F0;
+  --color-border-subtle: #EEF0F6;
+  --color-border-focus: #635BFF;
+
+  /* Typography */
+  --color-text-primary: #171923;
+  --color-text-secondary: #667085;
+  --color-text-muted: #8F9BB3;
+  --color-text-light: #FFFFFF;
+
+  /* Chat Message Styling */
+  --color-user-bubble: #635BFF;
+  --color-user-text: #FFFFFF;
+  --color-assistant-bubble: #FFFFFF;
+  --color-assistant-border: #E7E9F0;
+  --color-assistant-text: #171923;
+
+  /* Status Colors */
+  --color-error-bg: #FEF2F2;
+  --color-error-border: #FECACA;
+  --color-error-text: #DC2626;
+  --color-success-bg: #ECFDF5;
+  --color-success-border: #A7F3D0;
+  --color-success-text: #059669;
+
+  /* Code block colors */
+  --color-code-bg: #0F121A;
+  --color-code-text: #E6EDF3;
+  --color-code-border: #232936;
+  --color-inline-code-bg: #F0EFFF;
+  --color-inline-code-text: #4E44E5;
+
+  /* Fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-full: 9999px;
+
+  /* Elevation Shadows */
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-sm: 0 1px 3px rgba(16, 24, 40, 0.08), 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-md: 0 4px 8px -2px rgba(16, 24, 40, 0.08), 0 2px 4px -2px rgba(16, 24, 40, 0.04);
+  --shadow-lg: 0 12px 24px -4px rgba(16, 24, 40, 0.1), 0 4px 8px -2px rgba(16, 24, 40, 0.04);
+  --shadow-composer: 0 8px 30px rgba(16, 24, 40, 0.08);
+
+  /* Scrollbar */
+  --scrollbar-thumb: #CBD5E1;
+  --scrollbar-thumb-hover: #94A3B8;
+
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Theme Overrides */
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  --color-primary: #7C74FF;
+  --color-primary-hover: #635BFF;
+  --color-primary-active: #5348E8;
+  --color-primary-light: rgba(99, 91, 255, 0.16);
+  --color-primary-ring: rgba(124, 116, 255, 0.28);
+  --color-primary-gradient: linear-gradient(135deg, #7C74FF 0%, #9E8FFF 100%);
+
+  /* Backgrounds */
+  --color-bg-app: #111318;
+  --color-bg-surface: #181B22;
+  --color-bg-sidebar: #13161D;
+  --color-bg-subtle: #1E222B;
+  --color-bg-hover: #262B37;
+  --color-bg-active: #2F3544;
+  --color-bg-composer: #181B22;
+
+  /* Borders */
+  --color-border: #262B37;
+  --color-border-subtle: #1E222B;
+  --color-border-focus: #7C74FF;
+
+  /* Typography */
+  --color-text-primary: #F3F5FA;
+  --color-text-secondary: #9AA4B6;
+  --color-text-muted: #6B778D;
+  --color-text-light: #FFFFFF;
+
+  /* Chat Message Styling */
+  --color-user-bubble: #635BFF;
+  --color-user-text: #FFFFFF;
+  --color-assistant-bubble: #181B22;
+  --color-assistant-border: #262B37;
+  --color-assistant-text: #F3F5FA;
+
+  /* Status Colors */
+  --color-error-bg: rgba(220, 38, 38, 0.12);
+  --color-error-border: rgba(220, 38, 38, 0.3);
+  --color-error-text: #F87171;
+  --color-success-bg: rgba(5, 150, 105, 0.12);
+  --color-success-border: rgba(5, 150, 105, 0.3);
+  --color-success-text: #34D399;
+
+  /* Code block colors */
+  --color-code-bg: #0A0D14;
+  --color-code-text: #E6EDF3;
+  --color-code-border: #262B37;
+  --color-inline-code-bg: rgba(99, 91, 255, 0.2);
+  --color-inline-code-text: #A59CFF;
+
+  /* Elevation Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.55);
+  --shadow-composer: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* Scrollbar */
+  --scrollbar-thumb: #2F3544;
+  --scrollbar-thumb-hover: #475569;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  height: 100dvh;
+  width: 100%;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-app);
+  color: var(--color-text-primary);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+#root {
+  height: 100%;
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+}
+
+button, input, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  touch-action: manipulation;
+}
+
+/* Ensure mobile form inputs do not trigger iOS auto-zoom (<16px) */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+button:focus-visible,
+textarea:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 1px;
+}
+
+/* Respect user's motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: var(--radius-full);
+  transition: background var(--transition-fast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Smooth selection */
+::selection {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}

@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nexoraFaviconGrad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#635BFF" />
+      <stop offset="100%" stopColor="#7E76FF" />
+    </linearGradient>
+    <linearGradient id="nexoraFaviconStroke" x1="6" y1="6" x2="26" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="100%" stopColor="#EBE8FF" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="28" height="28" rx="8" fill="url(#nexoraFaviconGrad)" />
+  <path
+    d="M8.5 24.5V7.5L23.5 24.5V7.5"
+    stroke="url(#nexoraFaviconStroke)"
+    stroke-width="3.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="23.5" cy="7.5" r="1.8" fill="#FFFFFF" />
+</svg>

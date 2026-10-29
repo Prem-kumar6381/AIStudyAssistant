@@ -1,0 +1,57 @@
+# =================================================================
+# Root .gitignore for AIStudyAssistant (.NET 8 + React/Vite)
+# =================================================================
+
+# --- .NET Build & Output ---
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Tt]est[Rr]esults/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pidb
+*.booproj
+*.svclog
+
+# Visual Studio / Rider / JetBrains
+.vs/
+.idea/
+*.DotSettings.user
+_ReSharper*/
+
+# VS Code (preserve shared configuration if any)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# --- Node / Frontend (Client) ---
+node_modules/
+dist/
+dist-ssr/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.local
+
+# --- Environment & Secret Files ---
+.env
+.env.*
+!.env.example
+!sample.env
+appsettings.Production.json
+appsettings.*.local.json
+secrets.json
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini

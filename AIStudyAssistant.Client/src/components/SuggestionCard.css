@@ -1,0 +1,107 @@
+.suggestion-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+  box-shadow: var(--shadow-xs);
+  position: relative;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.suggestion-card:hover:not(.disabled) {
+  border-color: var(--color-primary);
+  background-color: var(--color-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.suggestion-card.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.suggestion-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  transition: transform var(--transition-fast);
+}
+
+.suggestion-card:hover:not(.disabled) .suggestion-icon-wrapper {
+  transform: scale(1.05);
+}
+
+.suggestion-content {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.suggestion-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suggestion-prompt {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suggestion-arrow {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+  padding-left: 4px;
+  flex-shrink: 0;
+}
+
+.suggestion-card:hover:not(.disabled) .suggestion-arrow {
+  color: var(--color-primary);
+  transform: translateX(4px);
+}
+
+@media (max-width: 480px) {
+  .suggestion-card {
+    padding: 11px 12px;
+    gap: 10px;
+  }
+  .suggestion-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 0.95rem;
+  }
+  .suggestion-title {
+    font-size: 0.86rem;
+  }
+  .suggestion-prompt {
+    font-size: 0.76rem;
+  }
+}

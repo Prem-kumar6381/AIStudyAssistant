@@ -1,0 +1,25 @@
+@AIStudyAssistant.API_HostAddress = http://localhost:5000
+
+### 1. Test POST /api/chat with valid question
+POST {{AIStudyAssistant.API_HostAddress}}/api/chat
+Content-Type: application/json
+
+{
+  "message": "What is an API?"
+}
+
+### 2. Test POST /api/chat with another question
+POST {{AIStudyAssistant.API_HostAddress}}/api/chat
+Content-Type: application/json
+
+{
+  "message": "Explain object-oriented programming with examples."
+}
+
+### 3. Test POST /api/chat with empty message (Validation test - should return 400)
+POST {{AIStudyAssistant.API_HostAddress}}/api/chat
+Content-Type: application/json
+
+{
+  "message": "   "
+}
